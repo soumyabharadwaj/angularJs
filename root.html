@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app_root" ng-cloak>
+  <head>
+    <title>root scope</title>
+    <style>
+      [ng\:cloak],[ng-cloak], .ng-cloak {
+        display:none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div ng-controller="ctrl_root">
+        <label>Search for a name</label>
+        <input type="text" ng-model="text_fname" />
+        <button ng-click="search(text_fname)">Search</button>
+        {{fullname}}
+        <br>
+    </div>
+    <div ng-controller="ctrl_root_2">
+      <label>First Name: </label>
+      <input type="text" ng-model="text_fname" />
+      <br>
+      <label>last Name: </label>
+      <input type="text" ng-model="text_lname">
+      <br>
+      <button ng-click="add(text_fname,text_lname)">Add</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" charset="utf-8"></script>
+      <script src="js/root.js"></script>
+  </body>
+</html>

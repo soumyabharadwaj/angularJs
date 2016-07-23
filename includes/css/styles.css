@@ -1,0 +1,158 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features{
+text-align: center;
+}
+#features img{
+  margin:0 0 20px;
+}
+#inputWhy{
+  margin-bottom: 15px;
+}
+footer{
+  background: #333;
+  color:#eee;
+  font-size: 11px;
+  padding: 20px;
+
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body{
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+.well .page-header h1{
+  margin-top: 0;
+}
+ul.unstyled{
+  list-style: none;
+  padding:0;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar-brand{
+     padding:12px 15px;
+   }
+#searchInput{
+  width: 200px;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel .item{
+  height:400px;
+}
+#slide1{
+  background:url('../../images/girl1.jpg') top no-repeat;
+}
+#slide2{
+  background:url('../../images/ru.jpg') top no-repeat;
+}
+#slide2{
+  background:url('../../images/ko.jpg') top no-repeat;
+}
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert{
+  margin-top: 20px;
+  display:none;
+}
+.well{
+  margin:20px 0px;
+}
+.tabbable img.thumbnail{
+  margin:0 20px 10px 0;
+}
+.thumbnails{
+  margin:20px 0;
+}
+.thumbnail{
+  position: relative;
+}
+.thumbnail h3{
+  font-size:16px;
+  margin:0 0 10px;
+  line-height: 20px;
+}
+.thumbnail .price{
+  font-size: 22px;
+  position: absolute;
+  top:-10px;
+  right: -10px;
+  padding: 10px;
+
+}
+.thumbnail .price sup{
+  font-weight: normal;
+  font-size: 12px;
+}
+.thumbnail span.glyphicon{
+  margin-right: 5px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+.thumbnail .price{
+  font-size: 14px;
+}
+.thumbnail .price sup{
+  font-size: 10px;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+/*-------------------------
+          hero
+-----------------------*/
+.hero_unit{
+  background: url('../../images/girl1.img');
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+}
+.hero_unit_text p{
+  top:18;
+  left:20;
+  position: absolute;
+  z-index: 999;
+}
+.hero_unit_backdrop{
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}

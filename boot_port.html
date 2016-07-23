@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<!--	<link href="includes/css/style1.css" rel="stylesheet">-->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style>
+		li{
+			display:inline;
+		}
+		.window{
+			margin-left: 300px;
+		}
+	</style>
+	</head>
+	<body>
+
+	<div class="container" >
+		<div class="navbar">
+				<div class="container">
+					<h1 class="logo pull-left">Troupe</h1>
+					<div class="pull-right">
+						<ul class="nav navbar-nav">
+							<li><a href="#"><span class="glyphicon glyphicon-plus"></span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-th-large"></span></a></li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user "></span>
+								My Accounts<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>
+									Settings</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>
+									Update Profile</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-off"></span>
+									Sign Out</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div><!--container-->
+		</div><!--navbar fixed-->
+	</div>
+
+<!--
+<div ng-controller="ctrl" class="window">
+	<div class="textarea">
+		<textarea name="msgArea" rows="15" cols="40">
+			 hello
+		</textarea>
+	</div>
+	<div>
+		<textarea name="msgSend" rows="4" cols="40" placeholder="Enter your text here"></textarea>
+	</div>
+</div> -->
+
+<div class="container" ng-controller="ctrl" >
+	<div class="row">
+			<div class="panel col-xs-12 col-sm-6 col-lg-6" >
+				<ul ng-repeat="person in messages">
+					<li>
+					{{person.name}}:{{person.message}}
+					</li>
+				</ul><br>
+				<div>
+					<ul>
+						<input type="text" name="newMessage" ng-model="newItem" placeholder="enter your message"/>
+						<button ng-click="addItem(newItem)">Send</button>
+					</ul>
+
+			</div>
+			</div>
+	</div>
+</div>
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" charset="utf-8"></script>
+	<script src="js/prod.js"></script>
+	</body>
+</html>

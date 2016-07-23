@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Bootstrap CSS -->
+		<link href="old/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="old/includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="include/styles.css" rel="stylesheet">
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="old/includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js">
+    </script>
+    <script src="include/myApp.js"></script>
+    <style>
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="main" ng-controller="mainCtrl">
+      <div class="navbar navbar-fixed-top" id="navigation">
+        <div class="container">
+          <form class="navbar-form">
+            <div class="col-xs-10 col-sm-10 col-lg-10">
+            <input type="text"  class="form-control"  ng-model="term" placeholder="Search..." id="SearchInput">
+          </div>
+          <div class="col-xs-2 col-sm-2 col-lg-2">
+            <button type="submit" ng-click="getSearchResults()" class="btn btn-default">
+              <span class="glyphicon glyphicon-search">
+              </span>
+            </button>
+          </div>
+          </form>
+        </div>
+      </div><br><br><br>
+      <!--  -->
+      <div class="container">
+        <div class="row">
+            <div class="panel col-xs-12 col-sm-6 col-lg-6" ng-repeat="person in people track by $index">
+              <img src="include/face.jpg" alt="photo" class="pull-left" id="face">
+              <ul>
+                <li>Name : {{person.name}}</li>
+                <li>Assoc. Id: {{person.aId}}</li>
+                <li>Workplace : {{person.workPlace}}</li>
+                <li>Experience: {{person.exp}}</li>
+              </ul><br>
+              <a href="#"  class="btn btn-info btn-block" ng-click="addToCustomList()">
+              Add to custom list
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

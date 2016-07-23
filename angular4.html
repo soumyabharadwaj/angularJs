@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app4">
+  <head>
+    <title>Angular 4</title>
+  </head>
+  <body>
+    <div ng-controller="ctrl4">
+
+      <input ng-blur="blur = blur +1"
+        ng-click="click = click + 1"
+        ng-dblclick="dblclick = dblclick + 1"
+        ng-copy="copy = copy + 1"
+        ng-paste="paste = paste + 1"
+        ng-cut="cut = cut + 1"
+        ng-focus = " focus =focus + 1 "
+      
+        ng-model = "confirmed"
+        ng-change = "change = change + 1"
+        ng-keydown="keydown($event)"
+      />
+
+      <h4>Blur events:{{blur}}</h4>
+      <h4>click events:{{click}}</h4>
+      <h4>double click events:{{dblclick}}</h4>
+      <h4>copy events:{{copy}}</h4>
+      <h4>paste events:{{paste}}</h4>
+      <h4>cut events:{{cut}}</h4>
+      <h4>focus events:{{focus}}</h4>
+      <h4>model events:{{model}}</h4>
+      <h4>change events:{{change}}</h4>
+
+      <h4>key pressed:{{kdKey}}</h4>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" charset="utf-8"></script>
+    <script src="js/four.js"></script>
+  </body>
+</html>

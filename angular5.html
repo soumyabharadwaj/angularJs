@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app5">
+  <head>
+        <title>Angular 5</title>
+        <style>
+          [ng\:cloak],[ng-cloak],ng-cloak{
+            display:none;
+          }
+          .blueText{
+            color: blue;
+          }
+          .boldText{
+            font-weight: bold;
+          }
+          .stripedBlue{
+            color: #007fff;
+            background-color: #DBE9F4;
+          }
+          .stripedBeige{
+            color: #CC0000;
+            background-color: #F5F5DC;
+          }
+
+        </style>
+  </head>
+  <body >
+    <div ng-controller="ctrl5">
+      <p>
+        <button ng-disabled="disableButton">button</button>
+      </p>
+      <p>
+        <input type="checkbox" ng-model="disableButton">
+          Disabled Button
+      </p>
+      <p>
+          <input type="checkbox" ng-model="dayTimeButton">Morining
+      </p>
+      <p ng-hide="!dayTimeButton">Good Morning</p>
+      <p ng-hide="dayTimeButton">Good Evening</p>
+
+      <p>
+          <select ng-model="textStyling">
+            <option value="blueText" >Blue Text</option>
+            <option value="boldText" >Bold Text</option>
+          </select>
+      </p>
+      <p ng-class="textStyling">Some 4RANDOM text
+
+      </p>
+
+      <table>
+        <tr ng-repeat="item in capitals"
+        ng-class-even="'  stripedBlue'"
+        ng-class-odd="'stripedBeige'">
+        <td>{{item.city}}</td>
+          <td>{{item.state}}</td>
+        </tr>
+      </table>
+
+
+
+    </div>
+
+    
+  </body>
+</html>

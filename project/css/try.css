@@ -1,0 +1,229 @@
+
+.primary h3,h4{
+font-family: 'Cabin Sketch', cursive;
+font-size: 30px;
+  font-weight: light;
+color: black;
+text-align: center;
+}
+.primary h2{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 64px;
+    font-weight: light;
+  color: black;
+  text-align: center;
+}
+.primary{
+  background: white;
+
+}
+.button {
+  background-color: white;
+  padding: 6px;
+  width: 100px;
+  height: 30px;
+  border: solid 0px white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.button:hover{
+  background-color: #9F0101;
+  color: white;
+}
+.primary .g1,.g2,.g3 {
+  margin-top: 14px;
+  background-color:#E5E8E8;
+
+margin-bottom: 10PX;
+text-align: justify;
+}
+.primary .para{
+  padding: 10px;
+  letter-spacing: 0.7px;
+}
+.primary p,h5,li{
+  font-family: 'Average', serif;
+  color: #1A5276;
+}
+
+.g3 h4{
+
+  padding: 5px;
+}
+.img_size img{
+  width:300px;
+  height:200px;
+
+}
+.g3{
+  padding-bottom: 70px;
+}
+.g3 .r1 p{
+  padding:5px;
+text-align: center;
+margin-right: 12px;
+}
+.hero_div1{
+  background-image: url('ru.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+.caption {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  bottom: 12%;
+  /*left: 65%;*/
+  background-color:#1A5276   ;
+  color: #D0D3D4;
+  font-size: large;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  opacity: 0.7;
+
+}
+.hero_unit{
+  background-image: url("../girl1.jpg");
+height: 100%;
+width: 100%;
+position: relative;
+background-size: cover;
+}
+.hero_unit_text{
+  top: 20%;
+  left: 30%;
+  color: red;
+position: absolute;
+}
+
+section{
+margin-top: 10px;
+}
+body{
+  font-family: sans-serif;
+/*background: #D5D8DC;*/
+background: #E5E8E8;
+}
+
+header{
+  width:100%;
+  height:60px;
+  position: fixed;
+  top: 0;
+  background-color:#7B241C ;
+  overflow: hidden;
+  z-index:1;
+}
+
+.logo{
+  font-size: 38px;
+font-family: 'Cabin Sketch', cursive;
+float: left;
+  color: white;
+  /*opacity: 0.2;*/
+  padding-right: 400px;
+/*  position: relative;*/
+  padding-left: 15px;
+}
+
+.menu nav{
+  float:right;
+}
+.menu li{
+  display: inline;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.menu ul{
+    padding-top: 15px;
+}
+.head a{
+  text-decoration: none;
+  color: white;
+margin-top: 20px;
+opacity: 0.1px;
+text-decoration: none;
+font-family: 'Cabin Sketch', cursive;
+font-size: 16px;
+margin-left: 0;
+}
+
+.head a:hover{
+  color: #A04000  ;
+}
+.line{
+  color: black;
+  text-shadow: none;
+  height: 50%;
+  width: 50%;
+
+  position: relative;
+  top:80%;
+  left:16%;
+  font-size: 64px;
+font-family: 'Cabin Sketch', cursive;
+font-weight: 500;
+}
+
+.foot_w{
+  background-color: #7B241C;
+  width: 100%;
+}
+.links{
+  float: left;
+  margin-top: 10px;
+  margin-left: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.links li{
+display: inline-block;
+
+}
+.links a,.social h3{
+  text-decoration: none;
+  color: white;
+  font-family: 'Cabin Sketch', cursive;
+  font-size:14px;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+.social{
+  float: right;
+  margin-top: 10px;
+  margin-left: -5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.social li{
+  display: inline;
+}
+.social img{
+  width:35px;
+}
+.copyright{
+  background-color: #7B241C;
+width: 100%;
+}
+.copyright p{
+
+    text-align:left;
+      text-decoration: none;
+      color: white;
+      font-family: 'Cabin Sketch', cursive;
+      font-size:14px;
+      margin-top: 10px;
+      margin-left: 200px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+}

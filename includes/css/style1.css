@@ -1,0 +1,367 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+/*----------------------------------
+mission statement
+-------------------------------------*/
+.mission{
+  background: #0285a3;
+  color: white;
+
+}
+.mission h3{
+}
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features{
+text-align: center;
+padding: 20px 0;
+}
+#features img{
+  margin:0 0 20px;
+}
+#inputAddress{
+  margin-bottom: 15px;
+}
+.feature h3,p{
+  font-family: sans-serif;
+}
+.more{
+  margin-top: 100px;
+}
+#moreCourses1{
+  margin-bottom: 10px;
+}
+.list-group-item a{
+  text-decoration: none;
+  color: black;
+  font-family:'Open-sans' sans-serif;
+}
+#moreInfo{
+  margin-bottom: 15px;
+}
+/*----------------
+      footer
+------------------*/
+footer{
+  background:#0285a3;
+  color:white;
+  font-size: 11px;
+  padding: 20px;
+  width: 100%;
+
+}
+footer .row a{
+  color:whitesmoke;
+  font-size: 16px;
+  font-family: 'Open-sans' sans-serif;
+}
+.social li{
+  display: inline;
+padding: 10px;
+}
+.social img{
+  width: 35px;
+}
+.social li, .social a{
+  height:50%;
+  width: 50%;
+  font-size: 16px;
+  font-family: 'Open-sans' sans-serif;
+}
+.copyright h6{
+  font-size: 16px;
+  font-family:'Open-sans' sans-serif;
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body{
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+.well .page-header h1{
+  margin-top: 0;
+}
+ul.unstyled{
+  list-style: none;
+  padding:0;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar-brand{
+     padding:12px 15px;
+   }
+#searchInput{
+  width: 200px;
+}
+.navbar{
+  border-bottom: 2px solid #0285a3;
+}
+
+.navbar-nav{
+  margin-top: 20px;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel .item{
+  height:500px;
+}
+#myCarousel{
+  margin-top: 60px;
+}
+#slide1{
+  background:url('../../images/1_def.jpg') top center no-repeat;
+  background-size: cover;
+
+}
+#slide2{
+  background:url('../../images/2_def.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide3{
+  background:url('../../images/3_def.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide4{
+  background:url('../../images/4_def.jpg') top center no-repeat;
+  background-size: cover;
+
+}
+
+
+.item h4{
+  color:#ff9800;
+  font-size: large;
+  font-family: 'Open-sans' sans-serif,solid;
+  font-size: 40px;
+
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+#slide1 h4{
+  position: absolute;
+  right:10px;
+  bottom: 350px;
+}
+#slide1 p{
+  position: absolute;
+  right:0;
+  bottom: 300px;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert{
+  margin-top: 20px;
+  display:none;
+}
+.well{
+  margin:20px 0px;
+}
+.tabbable img.thumbnail{
+  margin:0 20px 10px 0;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+   /* Landscape phone to portrait tablet */
+   @media (max-width: 768px) {
+     #myCarousel .item{
+       height:450px;
+     }
+     #slide1{
+       background:url('../../images/1_med.jpg') top center no-repeat;
+       background-size: cover;
+     }
+     #slide2{
+       background:url('../../images/2_med.jpg') top center no-repeat;
+       background-size: cover;
+     }
+     #slide3{
+       background:url('../../images/3_med.jpg') top center no-repeat;
+       background-size: cover;
+     }
+     #slide4{
+       background:url('../../images/4_med.jpg') top center no-repeat;
+       background-size: cover;
+     }
+     .item h4{
+       color:#ff9800;
+       font-size: large;
+       font-family: 'Open-sans' sans-serif,solid;
+       font-size: 30px;
+
+       margin-top: 60px;
+       margin-left: 20px;
+     }
+
+   }
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+.thumbnail .price{
+  font-size: 14px;
+}
+.thumbnail .price sup{
+  font-size: 10px;
+}
+#myCarousel .item{
+  height:265px;
+}
+#slide1{
+  background:url('../../images/1_small.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide2{
+  background:url('../../images/2_small.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide3{
+  background:url('../../images/3_small.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide4{
+  background:url('../../images/4_small.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+.item h4{
+  color:#ff9800;
+  font-size: large;
+  font-family: 'Open-sans' sans-serif,solid;
+  font-size: 15px;
+
+  margin-top: 60px;
+  margin-left: 10px;
+}
+#slide1 h4{
+  position: absolute;
+  right:2px;
+  bottom:100px;
+}
+#slide1 p{
+  position: absolute;
+  right:0;
+  bottom: 80px;
+}
+
+}
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #myCarousel .item{
+    height:600px;
+  }
+  #slide1{
+    background:url('../../images/1_large.jpg') top center no-repeat;
+    background-size: cover;
+  }
+  #slide2{
+    background:url('../../images/2_large.jpg') top center no-repeat;
+    background-size: cover;
+  }
+  #slide3{
+    background:url('../../images/3_large.jpg') top center no-repeat;
+    background-size: cover;
+  }
+  #slide4{
+    background:url('../../images/4_large.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+}
+/*-------------callout--------------*/
+.page-header h1{
+  color: #0285a3;
+  font-size: 4.2em;
+      font-family: Montserrat;
+      font-weight: 400;
+          line-height: 110%;
+      text-shadow: 1px 1px 2px #ccc;
+      margin: 2.1rem 0 1.68rem;
+      text-align: center;
+}
+.page-header a{
+  align: center;
+}
+
+/*-----------------------------
+mission callout
+------------------------------*/
+.mission h3{
+  font-family: Montserrat;
+  font-size: 4em;
+  margin:1.78rem 0 1.424rem;
+  font-weight:bold;
+text-align: center;
+}
+.mission p{
+  font-family:sans-serif;
+  margin:1.78rem 0 1.424rem;
+text-align: center;
+  font-size: 1.68rem;
+  font-weight: lighter;
+}
+.mission{
+  padding:70px 0;
+}
+.mission .row:first-child{
+  padding-bottom: 30px;
+}
+/*--------------
+hero
+--------------------*/
+
+.main2{
+  top:800px;
+
+}
+
+
+html,body,#main {
+  height:100%;
+}
+
+.hero-unit {
+  height:100%;
+  width:100%;
+  position:relative;
+  background: url('../../images/csr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hero-unit-caption {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  bottom: 12%;
+
+  color:#ff9800;
+  font-size: large;
+  font-family: 'Open Sans', sans-serif,solid;
+  font-size: 40px;
+}
